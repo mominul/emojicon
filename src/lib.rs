@@ -28,7 +28,7 @@ impl Emojicon {
         }
     }
 
-    /// Gets the emoji for given `term` wrapped in a `Option`.
+    /// Gets the emoji for given `emoticon` wrapped in a `Option`.
     /// 
     /// ```
     /// # use emojicon::Emojicon;
@@ -37,8 +37,8 @@ impl Emojicon {
     /// assert_eq!(emojicon.get(":-\"]"), Some("😊"));
     /// # }
     /// ```
-    pub fn get(&self, term: &str) -> Option<&str> {
-        self.emoticons.get(term).map(|i| *i)
+    pub fn get(&self, emoticon: &str) -> Option<&str> {
+        self.emoticons.get(emoticon).map(|i| *i)
     }
 }
 

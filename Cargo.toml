@@ -8,6 +8,7 @@ keywords = ["emoji", "emoticon", "unicode", "convert"]
 categories = ["text-processing"]
 repository = "https://github.com/mominul/emojicon"
 edition = "2018"
+exclude = ["/data", "/generate"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

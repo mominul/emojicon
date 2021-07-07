@@ -1,14 +1,14 @@
 [package]
 name = "emojicon"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Muhammad Mominul Huque <mominul2082@gmail.com>"]
-description = "Convert emoticons B-) into Unicode emoji's 😎"
+description = "Find Emoji by using Emoticons and GitHub's emoji names."
 license = "MIT"
 keywords = ["emoji", "emoticon", "unicode", "convert"]
 categories = ["text-processing"]
 repository = "https://github.com/mominul/emojicon"
 edition = "2018"
-exclude = ["/data", "/generate"]
+exclude = ["/data", "/generate", "/gemoji"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

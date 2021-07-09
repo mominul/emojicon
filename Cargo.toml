@@ -1,10 +1,10 @@
 [package]
 name = "emojicon"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Muhammad Mominul Huque <mominul2082@gmail.com>"]
-description = "Find Emoji by using Emoticons and GitHub's emoji names."
+description = "Find Emoji by using Emoticons and GitHub's, Bengali emoji names."
 license = "MIT"
-keywords = ["emoji", "emoticon", "unicode", "convert"]
+keywords = ["emoji", "emoticon", "unicode", "bengali"]
 categories = ["text-processing"]
 repository = "https://github.com/mominul/emojicon"
 edition = "2018"

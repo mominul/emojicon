@@ -90,6 +90,11 @@ fn create_bengali_emoji_data() {
             continue;
         }
 
+        // Ignore skin tone modifiers.
+        if emoji.contains(|c| matches!(c, '\u{1F3FB}'..='\u{1F3FF}')) {
+            continue;
+        }
+
         let codes: Vec<_> = code.split(',').collect();
 
         for code in codes {

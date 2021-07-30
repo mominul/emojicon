@@ -81,21 +81,14 @@ fn create_bengali_emoji_data() {
 
     let mut file = BufWriter::new(File::create(dest).unwrap());
     let source = read(parent.join("data/emoji-bn.json")).unwrap();
-    let emojis: BTreeMap<String, String> = serde_json::from_slice(&source).unwrap();
+    let emojis: BTreeMap<String, Vec<String>> = serde_json::from_slice(&source).unwrap(); 
     let mut map: BTreeMap<String, Vec<String>> = BTreeMap::new();
 
-    for (emoji, code) in emojis {
+    for (emoji, codes) in emojis {
         // Ignore entries which have spaces, we'll need to figure out what to do about them later.
-        if code.contains(" ") {
+        if codes.iter().any(|s| s.contains(" ")) {
             continue;
         }
-
-        // Ignore skin tone modifiers.
-        if emoji.contains(|c| matches!(c, '\u{1F3FB}'..='\u{1F3FF}')) {
-            continue;
-        }
-
-        let codes: Vec<_> = code.split(',').collect();
 
         for code in codes {
             map.entry(code.to_owned()).or_insert(Vec::new()).push(emoji.to_owned());

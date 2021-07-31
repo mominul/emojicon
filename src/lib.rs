@@ -35,7 +35,7 @@ mod bn_emojis;
 /// # }
 pub struct Emojicon {
     emoticons: HashMap<&'static str, &'static str>,
-    emojis: HashMap<&'static str, Vec<&'static str>>,
+    emojis: HashMap<&'static str, &'static [&'static str]>,
 }
 
 impl Emojicon {
@@ -84,7 +84,7 @@ impl Emojicon {
 /// assert_eq!(emojis.get("লল").unwrap().collect::<Vec<_>>(), ["😂", "🤣"]);
 /// # }
 pub struct BengaliEmoji {
-    emojis: HashMap<&'static str, Vec<&'static str>>,
+    emojis: HashMap<&'static str, &'static [&'static str]>,
 }
 
 impl BengaliEmoji {

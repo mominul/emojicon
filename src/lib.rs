@@ -80,7 +80,7 @@ impl Emojicon {
 /// # use emojicon::BengaliEmoji;
 /// # fn main() {
 /// let emojis = BengaliEmoji::new();
-/// assert_eq!(emojis.get("হাসি").unwrap().collect::<Vec<_>>(), ["😀", "😁", "😃", "😄"]);
+/// assert_eq!(emojis.get("হাসি").unwrap().collect::<Vec<_>>(), ["☺", "😀", "😁", "😃", "😄", "🙂"]);
 /// assert_eq!(emojis.get("লল").unwrap().collect::<Vec<_>>(), ["😂", "🤣"]);
 /// # }
 pub struct BengaliEmoji {
@@ -131,6 +131,6 @@ mod tests {
     fn test_bengali_emoji() {
         let emojis = BengaliEmoji::new();
         assert_eq!(emojis.get("কষ্ট").unwrap().collect::<Vec<_>>(), ["😣"]);
-        assert_eq!(emojis.get("নিরাশ").unwrap().collect::<Vec<_>>(), ["😑", "😔", "😦"]);
+        assert_eq!(emojis.get("নিরাশ").unwrap().collect::<Vec<_>>(), ["😑", "😔", "😦", "🙁"]);
     }
 }

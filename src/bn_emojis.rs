@@ -2,7 +2,7 @@
 use std::collections::HashMap;
 
 pub(crate) fn emojis() -> HashMap<&'static str, &'static [&'static str]> {
-	let data: Vec<(&str, &[&str])> = vec![
+	let data: [(&str, &[&str]); 1007] = [
 		("#", &["#️⃣", ]),
 		("*", &["*️⃣", ]),
 		("तुला", &["♎", ]),

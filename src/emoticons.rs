@@ -2,7 +2,7 @@
 use std::collections::HashMap;
 
 pub(crate) fn emoticons() -> HashMap<&'static str, &'static str> {
-	vec![
+	[
 		(">:(", "😠"),
 		(">:[", "😠"),
 		(">:-(", "😠"),

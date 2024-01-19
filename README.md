@@ -1,7 +1,7 @@
 # emojicon
 [![Build Status](https://github.com/mominul/emojicon/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/mominul/emojicon/actions?query=branch%3Amain)
-![crates.io](https://img.shields.io/crates/v/emojicon.svg)
-![docs.rs](https://docs.rs/emojicon/badge.svg)
+[![crates.io](https://img.shields.io/crates/v/emojicon.svg)](https://crates.io/crates/emojicon)
+[![docs.rs](https://docs.rs/emojicon/badge.svg)](https://docs.rs/emojicon/0.4.0/emojicon/)
 [![Rust](https://img.shields.io/badge/rust-1.56.0%2B-blue.svg?maxAge=3600)](https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html)
 
 Find Emoji by using Emoticons and GitHub's, Bengali emoji names.
